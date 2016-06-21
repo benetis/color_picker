@@ -1,1 +1,5 @@
-<p>Colors component</p>
+<ul>
+  <li *ngFor="let color of colorsService.getColors()">
+    {{color}}
+  </li>
+</ul>
