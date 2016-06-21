@@ -1,5 +1,5 @@
 <ul>
-  <li *ngFor="let color of colorsService.getColors()">
+  <li *ngFor="let color of colorsService.getColors() | async">
     {{color}}
   </li>
 </ul>

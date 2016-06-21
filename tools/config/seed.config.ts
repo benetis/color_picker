@@ -418,7 +418,11 @@ export class SeedConfig {
           [`${this.APP_BASE}${this.APP_DEST}`]: this.APP_DEST,
           [`${this.APP_BASE}node_modules`]: 'node_modules',
           [`${this.APP_BASE.replace(/\/$/, '')}`]: this.APP_DEST
-        }
+        },
+        middleware: function(req:any, res:any, next:any) {
+          res.setHeader('Access-Control-Allow-Origin', '*');
+          next();
+        },
       }
     }
   };

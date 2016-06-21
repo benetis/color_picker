@@ -5,13 +5,13 @@ import 'rxjs/add/observable/from';
 import 'rxjs/add/operator/map';
 
 /**
- * This class provides the NameList service with methods to read names and add names.
+ * This class provides the NameList service with methods to read colors and add colors.
  */
 @Injectable()
 export class NameListService {
 
   /**
-   * The array of initial names provided by the service.
+   * The array of initial colors provided by the service.
    * @type {Array}
    */
   names: string[] = [];
@@ -31,7 +31,7 @@ export class NameListService {
 
   /**
    * Returns an Observable for the HTTP GET request for the JSON resource. If there was a previous successful request
-   * (the local names array is defined and has elements), the cached version is returned
+   * (the local colors array is defined and has elements), the cached version is returned
    * @return {string[]} The Observable for the HTTP request.
    */
   get(): Observable<string[]> {
@@ -50,7 +50,7 @@ export class NameListService {
   }
 
   /**
-   * Adds the given name to the array of names.
+   * Adds the given name to the array of colors.
    * @param {string} value - The name to add.
    */
   add(value: string): void {

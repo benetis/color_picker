@@ -104,7 +104,7 @@ function onlySpecFiles(path) {
   return patternMatched && /[\.|_]spec\.js$/.test(path);
 }
 
-// Normalize paths to module names.
+// Normalize paths to module colors.
 function file2moduleName(filePath) {
   return filePath.replace(/\\/g, '/')
     .replace(/^\/base\//, '')

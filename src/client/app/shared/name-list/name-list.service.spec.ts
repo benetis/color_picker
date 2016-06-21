@@ -43,7 +43,7 @@ export function main() {
       expect(initialResponse).toEqual(jasmine.any(Observable));
     });
 
-    it('should resolve to list of names when get called', () => {
+    it('should resolve to list of colors when get called', () => {
       let names: any;
       initialResponse.subscribe((data: any) => names = data);
       expect(names).toEqual(['Dijkstra', 'Hopper']);

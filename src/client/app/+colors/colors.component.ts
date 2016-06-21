@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ColorsService } from '../shared/index';
+import { REACTIVE_FORM_DIRECTIVES } from '@angular/forms/index';
+
 /**
  *
  */
@@ -8,7 +10,8 @@ import { ColorsService } from '../shared/index';
   selector: 'sd-colors',
   templateUrl: 'colors.component.html',
   styleUrls: ['colors.component.css'],
-  providers: [ColorsService]
+  providers: [ColorsService],
+  // directives: [REACTIVE_FORM_DIRECTIVES]
 })
 export class ColorsComponent {
   constructor(public colorsService: ColorsService) {}
