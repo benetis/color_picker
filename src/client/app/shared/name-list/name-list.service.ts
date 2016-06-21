@@ -57,4 +57,3 @@ export class NameListService {
     this.names.push(value);
   }
 }
-
